@@ -10,7 +10,7 @@ use serde_json::json;
 use testcontainers::{clients::Cli, GenericImage, RunnableImage};
 use url::Url;
 
-const DAPHNE_HELPER_IMAGE_NAME_AND_TAG: &str = "cloudflare/daphne-worker-helper:sha-f6b3ef1";
+const DAPHNE_HELPER_IMAGE_NAME_AND_TAG: &str = "daphne_interop:latest";
 
 /// Represents a running Daphne test instance.
 pub struct Daphne<'a> {
